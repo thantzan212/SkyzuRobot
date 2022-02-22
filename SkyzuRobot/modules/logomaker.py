@@ -114,7 +114,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Skyzu Robot](https://t.me/SkyzuRobot)",
+            caption="Logo by [botညီလေး](https://t.me/n4nd4_hippy_bot)",
             force_document=False,
         )
         os.remove(flnme)
