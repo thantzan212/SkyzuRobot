@@ -83,8 +83,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @skyzu ✨
+✪ I'm an form ᶰ4 ᵛᵖᶰ ᵘˢᵉʳ ᵍʳᵒᵘᵖ bot designed to help manage your telegram group with a lot features.
+✪ Maintained by ᶰ4 ᵛᵖᶰ ᵘˢᵉʳ ᵍʳᵒᵘᵖ ✨
 ────────────────────────
 Hit the /help to see available command.
 """
@@ -99,13 +99,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="Donate​", url="https://t.me/yhantzin212"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="➗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➗",
+            text="➗ Add Botညီလေး to your Group ➗",
             url=f"t.me/{dispatcher.bot.username}?startgroup=new",
         ),
     ],
@@ -114,10 +114,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/56811b69cbcece20bbebf.jpg"
+EMI_IMG = "https://telegra.ph/file/8c278d46b852306e18231.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzu \
+ You can support the project by contacting @thantzin212 \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -371,15 +371,15 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Botညီလေး*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for SkyzuRobot.",
+            "\n\n_Botညီလေး's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for Botညီလေး.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -465,9 +465,9 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
+                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="https://t.me/+-Gsapl_ciLYwMGNl"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/ProjectSkyzu"
+                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/beginner_2015"
                         ),
                     ],
                     [
@@ -479,13 +479,13 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
-            f"\nHere Developers Making The SkyzuRobot",
+            text=f"<b>๏ Credis for Botညီလေး</b>\n"
+            f"\nHere Developers Making The Botညီလေး",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
+                        InlineKeyboardButton(text="ᶰ4 ᵛᵖᶰ ᵘˢᵉʳ ᵍʳᵒᵘᵖ", url="https://t.me/+-Gsapl_ciLYwMGNl"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
@@ -501,15 +501,7 @@ def Source_about_callback(update, context):
         query.message.edit_text(
             text="๏›› This advance command for Musicplayer."
             "\n\n๏ Command for admins only."
-            "\n • `/reload` - For refreshing the adminlist."
-            "\n • `/pause` - To pause the playback."
-            "\n • `/resume` - To resuming the playback You've paused."
-            "\n • `/skip` - To skipping the player."
-            "\n • `/end` - For end the playback."
-            "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
-            "\n\n๏ Command for all members."
-            "\n • `/play` <query /reply audio> - Playing music via YouTube."
-            "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
+            "\n • `/song download song from youtube",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -755,7 +747,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 1688072029:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -804,7 +796,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Skyzu Robot Started!**
+                f"""**Botညီလေး Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
